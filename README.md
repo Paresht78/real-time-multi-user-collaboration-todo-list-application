@@ -6,6 +6,9 @@ Absolutely! Here's a more detailed description for your GitHub README file:
 
 This project aims to create a real-time todo list application with multi-user collaboration features. Built using Python Flask for the backend, JavaScript for interactive frontend elements, and MySQL Workbench for secure storage of user data.
 
+![Alt text](todo1.png)
+
+
 ## Features:
 - **Real-time Updates:** Collaborate seamlessly with multiple users in real-time.
 - **User Authentication:** Secure user registration and login using MySQL Workbench.
