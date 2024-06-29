@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                        <div class="card-body py-4 px-4 px-md-5">
+
+                            <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                                <i class="fas fa-check-square me-1"></i>
+                                <u>My Todos</u>
+                            </p>
+                            <div class="pb-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Add new...">
+                                            <a href="#!" data-mdb-tooltip-init title="Set due date"><i class="fas fa-calendar-alt fa-lg me-3"></i></a>
+                                            <div>
+                                                <button type="button" class="btn btn-primary">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+                                <p class="small mb-0 me-2 text-muted">Filter</p>
+                                <select id="filterTasks" class="form-select form-select-sm me-2" style="width: auto;">
+                                    <option value="all">All</option>
+                                    <option value="completed">Completed</option>
+                                    <option value="active">Active</option>
+                                    <!-- <option value="has_due_date">Has due date</option> -->
+                                </select>
+                                <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
+                                <select class="form-select form-select-sm me-2" style="width: auto;">
+                                    <option value="1">Added date</option>
+                                    <option value="2">Due date</option>
+                                </select>
+                                <a href="#!" style="color: #23af89;" data-mdb-tooltip-init title="Ascending"><i class="fas fa-sort-amount-down-alt ms-2"></i></a>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div>
+                                    <input type="checkbox" id="selectAll">
+                                    <label for="selectAll" class="ms-2 mb-0">Select All</label>
+                                </div>
+                                <button type="button" class="btn btn-danger" id="deleteSelected">Delete Selected</button>
+                            </div>
+
+                            <ul class="list-group rounded-0 bg-transparent mb-2" id="taskList">
+                                <!-- Task items will be dynamically added here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
