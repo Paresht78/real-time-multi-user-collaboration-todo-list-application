@@ -24,7 +24,10 @@ This project aims to create a real-time todo list application with multi-user co
    ```
    git clone https://github.com/your-username/your-repo.git
    ```
-   
+    ```bash
+    git clone https://github.com/Paresht78/real-time-multi-user-collaboration-todo-list-application.git
+    ```
+    
 2. **Install dependencies:**
    ```
    pip install -r requirements.txt
