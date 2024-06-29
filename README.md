@@ -18,7 +18,6 @@ This project aims to create a real-time todo list application with multi-user co
 - **Backend:** Python Flask
 - **Frontend:** JavaScript, HTML, CSS
 - **Database:** MySQL Workbench
-- **Deployment:** [Specify your deployment details here]
 
 ## Setup:
 1. **Clone the repository:**
